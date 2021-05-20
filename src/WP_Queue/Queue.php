@@ -9,7 +9,7 @@ class Queue {
 	/**
 	 * @var ConnectionInterface
 	 */
-	protected $connection;
+	public $connection;
 
 	/**
 	 * @var Cron
