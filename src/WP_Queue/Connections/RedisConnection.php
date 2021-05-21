@@ -8,6 +8,13 @@ use WP_Queue\Job;
 class RedisConnection implements ConnectionInterface {
 
 	/**
+	 * Clean the queue.
+	 *
+	 */
+	public function clean() {
+
+	}
+	/**
 	 * Push a job onto the queue.
 	 *
 	 * @param Job $job

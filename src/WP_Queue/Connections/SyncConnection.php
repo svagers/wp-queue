@@ -6,6 +6,15 @@ use Exception;
 use WP_Queue\Job;
 
 class SyncConnection implements ConnectionInterface {
+	
+	/**
+	 * Clean the queue.
+	 *
+	 */
+	public function clean() {
+
+	}
+	
 	/**
 	 * Execute the job immediately without pushing to the queue.
 	 *

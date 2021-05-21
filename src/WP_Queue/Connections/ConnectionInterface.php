@@ -8,6 +8,13 @@ use WP_Queue\Job;
 interface ConnectionInterface {
 
 	/**
+	 * Clean the queue.
+	 *
+	 * @param Job $job
+	 */
+	public function clean();
+
+	/**
 	 * Push a job onto the queue.
 	 *
 	 * @param Job $job

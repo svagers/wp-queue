@@ -26,6 +26,15 @@ class Queue {
 	}
 
 	/**
+	 * Clean the queue;
+	 *
+	 * @return void
+	 */
+	public function clean() {
+		return $this->connection->clean();
+	}
+
+	/**
 	 * Push a job onto the queue;
 	 *
 	 * @param Job $job

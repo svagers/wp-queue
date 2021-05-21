@@ -35,6 +35,14 @@ class DatabaseConnection implements ConnectionInterface {
 	}
 
 	/**
+	 * Clean the queue.
+	 *
+	 */
+	public function clean() {
+		$this->database->query("TRUNCATE TABLE {$this->jobs_table}");
+	}
+
+	/**
 	 * Push a job onto the queue.
 	 *
 	 * @param Job $job
